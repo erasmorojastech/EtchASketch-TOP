@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.main {
+  min-height: 90vh;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+  color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 50%;
+  justify-content: space-evenly;
+}
+
+.github,
+.gitlab {
+  width: 32px;
+  height: 32px;
+}
+
+.github:hover,
+.gitlab:hover {
+  fill: dodgerblue;
+  transition-duration: 200ms;
+}

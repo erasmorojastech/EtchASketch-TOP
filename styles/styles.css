@@ -8,6 +8,7 @@ body {
 .main {
   height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -17,16 +18,15 @@ body {
   height: 480px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.passed-over {
-  background-color: aqua;
+  margin-top: 2rem;
 }
 
 .cell {
-  width: 30px;
-  height: 30px;
   border: 1px solid black;
+}
+
+.passed-over {
+  background-color: dodgerblue;
 }
 
 footer {

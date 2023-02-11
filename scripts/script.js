@@ -3,7 +3,7 @@
 const $board = document.querySelector('#board');
 let $grid = [];
 
-for (let i=0; i<256; i++) {
+for (let i = 0; i < 256; i++) {
   const cell = document.createElement('div');
   cell.setAttribute('class', 'cell');
 
@@ -11,3 +11,9 @@ for (let i=0; i<256; i++) {
 }
 
 $board.replaceChildren(...$grid);
+
+$board.childNodes.forEach((element)=>{
+  element.addEventListener('mouseenter', () => {
+    element.setAttribute('class', 'cell passed-over');
+  });
+});

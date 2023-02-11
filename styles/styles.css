@@ -19,6 +19,10 @@ body {
   flex-wrap: wrap;
 }
 
+.passed-over {
+  background-color: aqua;
+}
+
 .cell {
   width: 30px;
   height: 30px;

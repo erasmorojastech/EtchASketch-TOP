@@ -6,7 +6,23 @@ body {
 }
 
 .main {
-  min-height: 90vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  width: 480px;
+  height: 480px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
 }
 
 footer {
